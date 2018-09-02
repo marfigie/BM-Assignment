@@ -3,8 +3,7 @@ package funds;
 public enum FundType {
     DOMESTIC("Polski"),
     FOREIGN("Zagraniczny"),
-    CASH("Pieniężne");
-
+    CASH("Pieniężny");
 
     private final String label;
 

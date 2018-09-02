@@ -6,8 +6,10 @@ Project written using core java8 + Junit4.
 Created as MVN project, to start app run:  
 >> mvn test
 
-P.S.
-Solution slightly differs from one described in ex. 2 in provided instruction.
-In the instruction, the 10% of polish funds is split into 6.68%, 6.66%, 6.66% - I don't know if it was intentional.
+Algorithm works as follows:
 
-This solution, calculates it as: 6.67%, 6.67%, 6.66%
+Total cash is split between different fund types (Domestic, Foreign, Cash).
+The reminder from division is returned as unallocated.
+
+Cash allocated to given fund type is then divided equally between all funds of this given type.
+If there is remainder, it is added to first fund of this type.

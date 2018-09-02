@@ -1,15 +1,15 @@
 package calculation;
 
 import portfolio.PortfolioPosition;
-import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.util.List;
 
 public class CalculationOutcome {
 
     private List<PortfolioPosition> portfolioPositions;
-    private BigDecimal remainder;
+    private BigInteger remainder;
 
-    public CalculationOutcome(List<PortfolioPosition> portfolioPositions, BigDecimal remainder) {
+    public CalculationOutcome(List<PortfolioPosition> portfolioPositions, BigInteger remainder) {
         this.portfolioPositions = portfolioPositions;
         this.remainder = remainder;
     }
@@ -18,7 +18,7 @@ public class CalculationOutcome {
         return portfolioPositions;
     }
 
-    public BigDecimal getRemainder() {
+    public BigInteger getRemainder() {
         return remainder;
     }
 }

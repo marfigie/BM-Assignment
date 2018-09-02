@@ -12,19 +12,19 @@ public class InvestmentFundFactory {
             case FOREIGN:
                 return new InvestmentFundImpl(
                         FundType.FOREIGN,
-                        "Fundusz Zagraniczny " + ++numOfForeignFunds,
+                        "Fundusz "+fundType.getLabel()+ " " + ++numOfForeignFunds,
                         ++totalNumberOfFunds
                 );
             case DOMESTIC:
                 return new InvestmentFundImpl(
                         FundType.DOMESTIC,
-                        "Fundusz Polski " + ++numOfDomesticFunds,
+                        "Fundusz "+fundType.getLabel()+ " " + ++numOfDomesticFunds,
                         ++totalNumberOfFunds
                 );
             case CASH:
                 return new InvestmentFundImpl(
                         FundType.CASH,
-                        "Fundusz Zagraniczny " + ++numOfCashFunds,
+                        "Fundusz "+fundType.getLabel()+ " " + ++numOfCashFunds,
                         ++totalNumberOfFunds
                 );
             default:

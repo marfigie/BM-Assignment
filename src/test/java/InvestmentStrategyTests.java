@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 
 import static org.junit.Assert.*;
 
-public class InvestmentStrategyTest {
+public class InvestmentStrategyTests {
 
     @Test
     public void totalPercentageEqualsOneTest(){
@@ -13,7 +13,7 @@ public class InvestmentStrategyTest {
             BigDecimal sumOfStrategyPercentages = new BigDecimal(0)
                     .add(strategy.getCashPercentage())
                     .add(strategy.getDomesticPercentage())
-                    .add(strategy.getForeginPercentage());
+                    .add(strategy.getForeignPercentage());
             assertTrue(new BigDecimal("1.0").compareTo(sumOfStrategyPercentages) == 0);
         }
     }

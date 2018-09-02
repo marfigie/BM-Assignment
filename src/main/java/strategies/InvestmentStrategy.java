@@ -9,12 +9,12 @@ public enum InvestmentStrategy {
     AGGRESIVE(new BigDecimal("0.4"),new BigDecimal("0.2"),new BigDecimal("0.4"));
 
     private BigDecimal domesticPercentage;
-    private BigDecimal foreginPercentage;
+    private BigDecimal foreignPercentage;
     private BigDecimal cashPercentage;
 
-    InvestmentStrategy(BigDecimal domesticPercentage, BigDecimal foreginPercentage, BigDecimal cashPercentage) {
+    InvestmentStrategy(BigDecimal domesticPercentage, BigDecimal foreignPercentage, BigDecimal cashPercentage) {
         this.domesticPercentage = domesticPercentage;
-        this.foreginPercentage = foreginPercentage;
+        this.foreignPercentage = foreignPercentage;
         this.cashPercentage = cashPercentage;
     }
 
@@ -22,8 +22,8 @@ public enum InvestmentStrategy {
         return domesticPercentage;
     }
 
-    public BigDecimal getForeginPercentage() {
-        return foreginPercentage;
+    public BigDecimal getForeignPercentage() {
+        return foreignPercentage;
     }
 
     public BigDecimal getCashPercentage() {
@@ -35,7 +35,7 @@ public enum InvestmentStrategy {
             case DOMESTIC:
                 return domesticPercentage;
             case FOREIGN:
-                return foreginPercentage;
+                return foreignPercentage;
             case CASH:
                 return cashPercentage;
             default:
